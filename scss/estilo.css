@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos General*/
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #ffffff;
+}
+
+h1,
+h2 {
+  font-family: "Noto Serif", serif;
+}
+
+h1,
+p {
+  margin-bottom: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:visited {
+  color: #000000;
+}
+
+/*Animaciones*/
+@-webkit-keyframes Aparicion {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes Aparicion {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ENCABEZADO */
+.encarbezado {
+  background-color: lightpink;
+  height: 88vh;
+  color: #ffffff;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+}
+.encarbezado h1,
+.encarbezado p,
+.encarbezado .button {
+  -webkit-animation: Aparicion 1500ms 1;
+          animation: Aparicion 1500ms 1;
+}
+.encarbezado p {
+  max-width: 70ch;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+.encarbezado .button {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+/* NavBar*/
+nav {
+  padding: 0 40px;
+  background-color: #000000;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 10px 20px;
+}
+nav ul li.activo {
+  font-weight: bold;
+  background-color: #fb06d9;
+  color: #ffffff;
+}
+nav ul li:hover {
+  background-color: #fb06d9;
+  transition: 300ms;
+}
+nav ul li:active {
+  background-color: #fc466b;
+  transition: 150ms;
+}
+nav ul li a {
+  color: #ffffff;
+}
+nav ul li a:visited {
+  color: white;
+}
+nav .logo {
+  width: 48px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 32px;
+  min-height: 10vh;
+  text-align: center;
+  font-size: 0.875rem;
+  background-color: #feaabb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  margin-bottom: 0;
+}
+
+/* Botones */
+.buttonSec, .button,
+a.button,
+input.button {
+  padding: 8px 18px;
+  border-radius: 4px;
+  display: inline-block;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.button,
+a.button,
+input.button {
+  background-color: #fb06d9;
+  border: 1px solid #fb06d9;
+  color: #ffffff;
+  font-weight: 600;
+}
+.button:hover,
+a.button:hover,
+input.button:hover {
+  background-color: #fc466b;
+  transition: 300ms;
+  border-color: #fc466b;
+}
+
+.buttonSec {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #ad7d6a;
+}
+
+/* CARDS */
+.cards {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  height: auto;
+  width: 400px;
+  margin: 24px;
+  padding-bottom: 32px;
+  box-shadow: 1px 1px 10px 2px rgba(73, 29, 8, 0.2);
+}
+.cards img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.cards p {
+  min-height: 100px;
+}
+.cards:hover {
+  transform: translateY(-3px);
+  transition: 400ms ease-in-out;
+}
+
+.cardBody {
+  padding: 24px;
+}
+
+/* Formulario */
+form {
+  background-color: #ece4dd;
+  padding: 24px;
+  width: 40%;
+}
+form > div {
+  margin: 16px 0;
+}
+
+.contactoFormulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+}
+.contactoFormulario > div {
+  display: flex;
+  width: 75%;
+  justify-content: center;
+}
+.contactoFormulario h1 {
+  color: #fc466b;
+  padding-top: 24px;
+}
+
+/* Formatos */
+.textCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.productos {
+  text-align: center;
+  padding-top: 2rem;
+  color: #fc466b;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.nosotros {
+  display: flex;
+  padding-top: 24px;
+}
+.nosotros div:nth-child(2) {
+  padding: 0 24px;
+}
+.nosotros h1 {
+  color: #fc466b;
+}
+
+.nosotrosImg {
+  margin: 24px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.servicio {
+  padding: 40px 0;
+}
+.servicio p {
+  max-width: 70ch;
+  text-align: left;
+}
+.servicio h2 {
+  color: #fc466b;
+}
+.servicio .textCenter {
+  padding-top: 10%;
+  border-top: 1px solid #fb06d9;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .destacados {
+    display: grid;
+    grid-template-areas: "Titulo Titulo" "card1 card2" "card3 .";
+  }
+  .nosotros {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 992px) {
+  .destacados {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "Titulo" "card1" "card2" "card3";
+  }
+  .cardContainer {
+    justify-content: center;
+  }
+  .contactoFormulario > div {
+    flex-direction: column;
+  }
+  form {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    padding: 10px 20px;
+  }
+  .cardContainer {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  }
+  .cards {
+    width: auto;
+    margin: 16px;
+  }
+  .encabezado {
+    padding: 20px;
+    height: 50vh;
+    background-position: 35% 20%;
+  }
+  .nosotrosImg {
+    width: auto;
+  }
+  .nosotrosImg img {
+    width: 100%;
+  }
+  .contactoFormulario {
+    padding: 0;
+  }
+  .contactoFormulario > div {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .servicio .textCenter {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .cardContainer {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}/*# sourceMappingURL=estilo.css.map */

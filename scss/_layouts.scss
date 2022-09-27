@@ -1,0 +1,56 @@
+/* Formatos */
+.textCenter {
+    @include flexbox (flex, center, center, column);
+}
+
+.productos {
+    text-align: center;
+    padding-top: 2rem;
+    color: $color_secundario;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    column-gap: 16px;
+}
+
+.nosotros {
+    display: flex;
+    padding-top: 24px;
+
+    div:nth-child(2) {
+        padding: 0 24px;
+    }
+
+    h1 {
+        color: $color_secundario;
+    }
+}
+
+.nosotrosImg {
+    margin: 24px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
+    column-gap: 16px;
+}
+
+.servicio {
+    padding: 40px 0;
+
+    p {
+        max-width: 70ch;
+        text-align: left;
+    }
+
+    h2 {
+        color: $color_secundario;
+    }
+
+    .textCenter {
+        padding-top: 10%;
+        border-top: 1px solid $color_principal;
+    }
+}
