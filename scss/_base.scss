@@ -31,7 +31,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: "Noto Serif", serif;
 }
 
@@ -65,7 +66,7 @@ a {
 
 /* ENCABEZADO */
 
-.encarbezado {
+.encabezado {
     background-color: lightpink;
     height: 88vh;
     color: $color_cards;

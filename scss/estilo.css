@@ -12,7 +12,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Noto Serif", serif;
 }
 
@@ -51,7 +52,7 @@ a:visited {
   }
 }
 /* ENCABEZADO */
-.encarbezado {
+.encabezado {
   background-color: lightpink;
   height: 88vh;
   color: #ffffff;
@@ -61,20 +62,20 @@ a:visited {
   justify-content: center;
   background-size: cover;
 }
-.encarbezado h1,
-.encarbezado p,
-.encarbezado .button {
+.encabezado h1,
+.encabezado p,
+.encabezado .button {
   -webkit-animation: Aparicion 1500ms 1;
           animation: Aparicion 1500ms 1;
 }
-.encarbezado p {
+.encabezado p {
   max-width: 70ch;
   -webkit-animation-delay: 500ms;
           animation-delay: 500ms;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
-.encarbezado .button {
+.encabezado .button {
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
   -webkit-animation-fill-mode: backwards;
