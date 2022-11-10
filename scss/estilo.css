@@ -106,7 +106,7 @@ nav ul li:hover {
   transition: 300ms;
 }
 nav ul li:active {
-  background-color: #fc466b;
+  background-color: palevioletred;
   transition: 150ms;
 }
 nav ul li a {
@@ -125,7 +125,7 @@ nav .logo {
   min-height: 10vh;
   text-align: center;
   font-size: 0.875rem;
-  background-color: #feaabb;
+  background-color: #f0c1d1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,9 +157,9 @@ input.button {
 .button:hover,
 a.button:hover,
 input.button:hover {
-  background-color: #fc466b;
+  background-color: palevioletred;
   transition: 300ms;
-  border-color: #fc466b;
+  border-color: palevioletred;
 }
 
 .buttonSec {
@@ -222,7 +222,7 @@ form > div {
   justify-content: center;
 }
 .contactoFormulario h1 {
-  color: #fc466b;
+  color: palevioletred;
   padding-top: 24px;
 }
 
@@ -237,7 +237,7 @@ form > div {
 .productos {
   text-align: center;
   padding-top: 2rem;
-  color: #fc466b;
+  color: palevioletred;
 }
 
 .cardContainer {
@@ -255,7 +255,7 @@ form > div {
   padding: 0 24px;
 }
 .nosotros h1 {
-  color: #fc466b;
+  color: palevioletred;
 }
 
 .nosotrosImg {
@@ -276,7 +276,7 @@ form > div {
   text-align: left;
 }
 .servicio h2 {
-  color: #fc466b;
+  color: palevioletred;
 }
 .servicio .textCenter {
   padding-top: 10%;

@@ -42,7 +42,7 @@ a {
 .encabezado {
   background-color: lightpink;
   height: 88vh;
-  color: #ffffff;
+  color: black;
   padding-left: 40px;
   display: flex;
   flex-direction: column;
@@ -74,16 +74,16 @@ nav {
     padding: 10px 20px; }
     nav ul li.activo {
       font-weight: bold;
-      background-color: #fb06d9;
-      color: black; }
+      background-color: none;
+      color: #ffffff; }
     nav ul li:hover {
-      background-color: #fcb045;
+      background-color: #fb06d9;
       transition: 300ms; }
     nav ul li:active {
-      background-color: #ad7d6a;
+      background-color: palevioletred;
       transition: 150ms; }
     nav ul li a {
-      color: black; }
+      color: #ffffff; }
       nav ul li a:visited {
         color: white; }
   nav .nekologo {
